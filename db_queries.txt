@@ -1,0 +1,37 @@
+
+CREATE TABLE employee_leave_info (
+    leave_id SERIAL PRIMARY KEY,
+    employee_name VARCHAR(100) NOT NULL,
+    leave_start_date DATE NOT NULL,
+    leave_end_date DATE NOT NULL,
+    reason TEXT,
+	approval_status VARCHAR(10)
+);
+
+CREATE TABLE employee_info (
+    employee_id SERIAL PRIMARY KEY,
+    employee_name VARCHAR(100) NOT NULL,
+    email_id VARCHAR(100) NOT NULL,
+    contact_number VARCHAR(100) NOT NULL
+);
+
+
+INSERT INTO employee_info (employee_name, email_id, contact_number)
+VALUES 
+    ('Arjun Mehta', 'arjun.m@company.com', '4000012345'),
+    ('Priya Sharma', 'priya.s@company.com', '2123450000'),
+    ('Rohan Das', 'rohan.d@company.com', '5255255451'),
+    ('Sania Khan', 'sania.k@company.com', '343432453'),
+    ('Vikram Singh', 'vikram.s@company.com', '1366554433');
+
+INSERT INTO employee_leave_info (employee_name, leave_start_date, leave_end_date, reason, approval_status)
+VALUES 
+    ('Arjun Mehta', '2026-04-22', '2026-04-29', 'Annual vacation to Japan','Pending'),
+	('Priya Sharma', '2026-04-24', '2026-04-28', 'Medical Leave','Pending'),
+    ('Rohan Das', '2026-04-16', '2026-04-28', 'Annual vacation','Pending'),
+    ('Sania Khan', '2026-05-01', '2026-05-03', 'Attending a tech conference','Pending'),
+    ('Vikram Singh', '2026-04-15', '2026-04-18', 'Medical appointment','Pending'),
+    ('Rohan Das', '2026-06-12', '2026-06-26', 'Annual vacation','Pending'),
+	('Rohan Das', '2026-03-03', '2026-03-13', 'Annual vacation','Approved'),
+	('Rohan Das', '2026-02-11', '2026-02-13', 'Personal Leave','Approved'),
+	('Vikram Singh', '2026-01-01', '2026-01-10', 'Medical appointment','Approved');

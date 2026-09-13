@@ -1,0 +1,20 @@
+->Create a directory called ui or just issue below command. It will create the directory
+
+npx create-next-app@latest ui
+
+-> go to the directory and issue below command. It will start the default Next.js home page
+
+npm run dev
+
+-> Staying in the ui directory issue below command. Accept the default options. Below command will take time to complete
+
+npm install @copilotkit/react-ui @copilotkit/react-core @copilotkit/runtime @ag-ui/client
+
+
+-> create dir under ui/app -> api/copilotkit and create file route.ts  and paste the content from the shared files. Make sure you update your correct HR agent URL
+
+-> under app -> change layout.tsx, page.tsx and globals.css
+
+-> create chat-theme.css and paste the content
+
+-> Issue the npm run dev command again. This should open the working HR agent for you

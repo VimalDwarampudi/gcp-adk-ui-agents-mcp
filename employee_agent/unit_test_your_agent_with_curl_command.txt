@@ -1,0 +1,18 @@
+curl -X POST <your-agent-url> \
+-H "Content-Type: application/json" \
+-d '{
+  "threadId": "test-thread",
+  "runId": "test-run",
+  "state": {},
+  "messages": [
+    {
+      "role": "user",
+      "content": "Hello, share me all the pending leaves please",
+      "id": "msg-001",
+      "user": { "id": "demo_user" }
+    }
+  ],
+  "tools": [],
+  "context": [],
+  "forwardedProps": {}
+}'

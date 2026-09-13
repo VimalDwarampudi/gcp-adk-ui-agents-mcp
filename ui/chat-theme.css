@@ -1,0 +1,37 @@
+/* chat-theme.css */
+.copilot-light-theme {
+  /* Main Colors */
+  --copilot-kit-primary-color: #4f46e5; /* Indigo */
+  --copilot-kit-background-color: #ffffff; /* Pure White */
+
+  /* Text */
+  --copilot-kit-text-color: #1e293b; /* Slate 800 */
+  --copilot-kit-secondary-text-color: #64748b; /* Slate 500 */
+
+  /* Message Bubbles */
+  --copilot-kit-bot-message-bg-color: #f1f5f9; /* Slate 100 (Very light gray) */
+  --copilot-kit-user-message-bg-color: #4f46e5; /* Indigo */
+  --copilot-kit-user-message-text-color: #ffffff;
+
+  /* Input Area */
+  --copilot-kit-input-bg-color: #ffffff;
+  --copilot-kit-input-placeholder-color: #94a3b8;
+
+  /* Borders */
+  --copilot-kit-separator-color: #e2e8f0; /* Slate 200 */
+}
+
+/* Polishing the Chat Header */
+.copilot-light-theme .copilot-kit-header {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #f1f5f9 !important;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+/* Styling the suggestions */
+.copilot-light-theme .copilot-kit-suggestion {
+  background-color: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  color: #4f46e5 !important;
+}
